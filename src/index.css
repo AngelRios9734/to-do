@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(45, 42, 87);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-style: unset;
+  text-align: center;
+  margin: 20px 0; /* Centra horizontalmente */
+
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-search {
+  text-align: center;
+  width: 450px;
+  height: 50px;
+  margin: 5px;
+  padding: 0px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.buton-search {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: green;
+}
+
+
+
+.buton-restart.block {
+  visibility: visible;
+}
+
+.task-list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: auto; /* Mueve la lista hacia la izquierda */
+  margin-right: 60px; /* Mueve la lista hacia la derecha */
+}
+
+
+
+.new-task {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.task-item {
+  width: 400px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+
+.buton-restart {
+  width: 50px;
+  height: 50px;
+  margin: auto; /* Centra horizontalmente */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(231, 89, 7);
+  visibility: hidden;
+}
+
+.buton-delete {
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.buton-check {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(69, 134, 69);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.task-item.done {
+  background-color: rgb(69, 134, 69);
+  text-decoration: line-through;
+}
+
+.buton-check.update {
+  background-color: rgb(240, 238, 234);
+}
