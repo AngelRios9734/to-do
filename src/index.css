@@ -13,20 +13,20 @@ h1 {
   color: white;
   font-style: unset;
   text-align: center;
-  margin: 20px 0; /* Centra horizontalmente */
-
+  margin: 20px 0;
 }
-
 
 form {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .input-search {
   text-align: center;
-  width: 450px;
+  width: 90%;
+  max-width: 450px;
   height: 50px;
   margin: 5px;
   padding: 0px 20px;
@@ -47,8 +47,6 @@ form {
   background-color: green;
 }
 
-
-
 .buton-restart.block {
   visibility: visible;
 }
@@ -60,11 +58,7 @@ form {
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  margin-left: auto; /* Mueve la lista hacia la izquierda */
-  margin-right: 60px; /* Mueve la lista hacia la derecha */
 }
-
-
 
 .new-task {
   flex-grow: 1;
@@ -72,8 +66,9 @@ form {
 }
 
 .task-item {
-  width: 400px;
-  height: 30px;
+  width: 90%;
+  max-width: 400px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,13 +77,21 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: white;
+  word-wrap: break-word; /* Allow breaking words to avoid overflow */
 }
 
+.task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevents the text from wrapping to a new line */
+}
 
 .buton-restart {
   width: 50px;
   height: 50px;
-  margin: auto; /* Centra horizontalmente */
+  margin: auto;
   border: none;
   border-radius: 10px;
   color: white;

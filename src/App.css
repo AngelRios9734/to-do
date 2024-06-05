@@ -24,3 +24,17 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .input-search {
+    width: 90%;
+  }
+
+  .task-item {
+    width: 90%;
+  }
+
+  .buton-search, .buton-restart, .buton-delete, .buton-check {
+    width: 40px;
+    height: 40px;
+  }
+}
